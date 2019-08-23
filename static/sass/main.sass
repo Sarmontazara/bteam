@@ -1,0 +1,1611 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+::placeholder
+	color: #000
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+body
+	font-family: 'Neo Sans Pro'
+	font-weight: normal
+	font-style: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	color: #000
+	
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+button
+button:active
+button:focus 
+    outline: none
+
+input
+input:active
+input:focus 
+    outline: none
+
+img
+img:active
+img:focus 
+    outline: none
+
+.hidden 
+  display: none
+
+.hiddens
+  visibility: hidden 
+
+.visible
+	display: block 
+
+.opacity
+	opacity: 0.3
+
+.row:before  
+  display: inline-block
+
+.row:after
+	display: inline-block
+
+p 
+	margin: 0px
+
+.center
+	text-align: center
+	margin: auto
+
+
+
+// Custom css
+
+	// Background
+
+.screen1
+	width: auto
+	height: auto
+	position: relative
+	padding-bottom: 100px
+
+#gallery
+	background-image: url(../img/background3.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: auto
+	height: auto
+	position: relative
+	padding-bottom: 80px
+
+#bottom
+	position: absolute
+	bottom: 0%
+	margin-top: 15px
+
+#layer1
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/layer1.png)
+	background-repeat: no-repeat
+	background-size: 75%
+	width: 100%
+	height: 100%
+	top: 0px
+	
+
+#layer2
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/layer2.png)
+	background-repeat: no-repeat
+	background-size: 100%
+	width: 97%
+	height: 98%
+	top: 100px
+	left: 0px
+	animation-duration: 4s
+	opacity: 0.8
+	
+
+	
+
+#ell1 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell1.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 140px
+	height: 100px
+	top: 5px
+	left: 100%
+	margin-left: -145px
+	z-index: 1
+	opacity: 0.7
+
+#ell2 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 200px
+	height: 200px
+	bottom: -50px
+	left: 20%
+	margin-left: -90px
+	z-index: 2
+	opacity: 0.5
+	animation-duration: 4s
+
+#ell4 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell4.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 150px
+	height: 150px
+	bottom: 10%
+	left: 40%
+	margin-left: -110px
+	z-index: 4
+	opacity: 0.7	
+	animation-duration: 4s
+
+#ell5 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell5.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 150px
+	height: 150px
+	top: 13%
+	left: 48%
+	margin-left: -75px
+	z-index: 5
+	opacity: 0.7
+	animation-duration: 4s
+
+#ell6
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell6.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 150px
+	height: 150px
+	top: 40%
+	left: 90%
+	margin-left: -75px
+	z-index: 5
+	opacity: 0.7
+	animation-duration: 4s
+
+#ell9 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell9.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 455px
+	height: 452px
+	top: 20%
+	left: 0%
+	margin-left: -225px
+	z-index: 9
+	opacity: 0.5
+
+#ell10 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell10.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 300px
+	height: 180px
+	bottom: 0px
+	left: 88%
+	margin-left: -225px
+	z-index: 10
+	opacity: 0.5	
+
+#ell8 
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell8.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 180px
+	height: 180px
+	bottom: 80px
+	left: 50%
+	margin-left: -90px
+	z-index: 8
+	opacity: 0.5
+
+#ell7
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell7.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 120px
+	height: 120px
+	top: 35px
+	left: 25%
+	margin-left: -120px
+	z-index: 7
+	opacity: 0.7
+
+#fig1
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/fig1.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 20px
+	height: 20px
+	bottom: 12%
+	left: 70%
+	margin-left: -110px
+	z-index: 4
+	opacity: 0.7
+	animation-duration: 4s
+
+#fig2
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/fig2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 25px
+	height: 15px
+	bottom: 10%
+	left: 42%
+	margin-left: -110px
+	z-index: 4
+	opacity: 0.7
+	animation-duration: 4s
+
+	// Background
+
+.hamburger 
+	display: none
+
+.animated 
+	overflow-x: hidden !important
+	overflow-y: hidden !important
+
+.col-6 
+	z-index: 9999
+
+.col-md-6 
+	z-index: 9997
+
+.col-12
+	z-index: 9998
+
+.content
+	margin-top: 100px
+	
+
+.menu
+	z-index: 9999
+	position: fixed
+	padding-top: 8px
+	top: 0px 
+	width: 100%
+	height: 108px
+
+
+.hamburger-box
+	margin-top: 5px
+  
+	
+.logo 
+	display: block
+	float: left 
+
+.logo2
+	display: none
+
+.logo a img
+	cursor: pointer
+
+.menu__item
+	text-transform: uppercase
+	padding-top: 15px
+	display: block
+	float: left
+	margin-left: 50px
+
+.menu__item ul
+	display: block
+	float: left
+	padding-left: 0px
+
+.menu__item ul li 
+	display: block
+	float: left
+	margin-right: 30px
+
+.menu__item ul li a 
+	color: #cef0fd
+
+
+.menu__item ul li:last-child 
+	margin-right: 0px
+
+.menu .container
+	padding: 25px 0px 25px 0px
+
+.contacts
+	color: #cef0fd
+	font-size: 18px
+	display: block
+	float: right
+	margin-right: 15px
+
+.contacts p 
+	padding-left: 30px
+	background-image: url(../img/tel1.png)
+	background-repeat: no-repeat
+	background-position: 0px 6px
+
+.contacts span 
+	padding-left: 30px
+	background-image: url(../img/tel.png)
+	background-repeat: no-repeat
+	font-weight: 500
+	background-position: 0px 3px
+
+.menu__hamb
+	position: absolute
+	display: block
+	content: ''
+	width: 440px
+	height: 270px
+	float: right
+	right: 15px
+	top: 25px
+
+.mhback
+	border-radius: 15px
+
+.hamburger
+	float: right
+	display: none
+	position: relative
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+	background-color: #fff
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	background-color: #fff
+
+#navigation
+	display: block
+	float: right
+	position: absolute
+	width: 400px
+	right: 50px
+	top: 42px
+
+#navigation ul li
+	text-transform: uppercase
+	margin-bottom: 25px
+	width: 100%
+	border-bottom: 1px solid #fff
+	
+#navigation ul li a 
+	color: #fff
+
+#title
+	margin-top: 100px
+	padding: 75px 0px 
+	
+.slick-dots
+	position: absolute
+	bottom: -275px
+
+.slick__fix
+	left: 0%
+
+
+
+.slick-dots li button 
+	color: #8f8f8f
+	width: 15px
+	height: 15px
+	background: #8f8f8f
+	opacity: 1
+
+.slick-dots li button:focus
+	color: #8f8f8f
+
+.slick-dots li button:active
+	color: #8f8f8f
+
+.slick-dots li button:hover
+	color: #8f8f8f
+
+.slick-dots li button:before
+	border-radius: 50%
+	color: #8f8f8f
+
+.slick-dots li.slick-active button:before
+	color: #fff
+
+.slick-dots li.slick-active button
+	background: #fff
+	
+
+.title
+	margin-top: 80px
+	color: #fff
+
+.title h1 
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 40px
+	line-height: 1.4em
+
+.title span 
+	display: block
+	font-size: 20px 
+	font-weight: 300 
+	font-style: normal
+	margin-top: 15px 
+	margin-bottom: 30px
+
+
+
+button
+	color: #fff
+	text-transform: uppercase
+	padding: 13px 25px
+	background: #ed462f
+	border: none
+	border-radius: 25px
+	
+
+	
+
+.button:hover
+	background: #eb4d53 
+	cursor: pointer
+
+#gift2, #gift3
+	position: relative
+	display: none
+	color: #fff
+	font-weight: normal
+	font-style: normal
+	font-size: 16px
+	text-align: center
+	opacity: 0.9
+
+#gift2
+	overflow-x: hidden
+	padding: 15px 0px
+
+#gift3
+	background: none
+	margin-top: 30px
+	padding-bottom: 30px
+	border-bottom: 1px solid #302772
+
+
+.title__gift 
+	position: relative
+	display: block
+	color: #fff
+	font-weight: normal
+	font-style: normal
+	font-size: 16px
+	text-align: center
+	opacity: 0.99
+	border-radius: 20px
+	padding: 40px 0px 60px 0px
+
+.title__gift span 
+	color: #ed462f
+
+#gift2 span 
+	color: #ed462f
+
+#gift3 span 
+	color: #ed462f
+
+#gift2 i
+	text-transform: uppercase
+	color: #fff
+	font-style: normal
+
+#gift3 i
+	text-transform: uppercase
+	color: #fff
+	font-style: normal
+
+.title__gift i
+	text-transform: uppercase
+	color: #fff
+	font-style: normal
+
+
+.gift__item2
+	font-weight: bold
+	font-size: 36px
+	margin-top: 10px
+
+.gift__item2 span 
+	font-size: 40px
+	text-transform: uppercase
+
+
+
+.gift__item3 .gift__item4
+	font-size: 18px
+
+
+.gift__item4 
+	display: block
+	margin-top: 30px
+
+.gift__time
+	margin-top: 15px
+
+.gift__time span
+	color: #fff
+	font-weight: 300
+	margin-right: 11px
+	margin-left: 12px
+
+#gift2 .col-sm-4 .gift__time span
+	color: #fff
+	font-weight: 300
+	margin-right: 11px
+	margin-left: 12px
+
+#gift3 .col-sm-4 .gift__time span
+	color: #fff
+	font-weight: 300
+	margin-right: 11px
+	margin-left: 12px
+
+#gift3 button 
+	margin-top: 30px
+
+
+#cd, #cd2, #cd3
+	padding-left: 2px
+	font-size: 24px 
+	font-weight: bold
+	color: #000
+	letter-spacing: 0.1em
+	padding-top: 7px
+	background-image: url(../img/time.png)
+	background-repeat: no-repeat
+	background-position: 50% -2px
+	word-spacing: 1.3em
+
+h3 
+	text-transform: uppercase
+	font-size: 28px
+	font-weight: bold
+	text-align: center
+	margin: auto
+	color: #2e2069
+	
+h4
+	font-size: 16px
+	font-weight: bold
+	text-align: center
+	margin: auto
+	color: #2e2069
+
+.whychoose h3 
+	margin-top: 0px
+	margin-bottom: 50px
+
+.choose
+	margin: 100px 0px
+
+.choose__item
+	display: block
+	padding-top: 20px 
+	text-align: center
+	margin: auto
+
+.choose__item p 
+	font-size: 16px
+	font-weight: normal
+
+.choose__item h4 
+	margin: 15px 0px
+
+
+.plan
+  margin: 100px 0px
+
+.plan .row 
+	height: 680px
+	margin-bottom: 80px
+
+.plan h3 
+	margin-bottom: 50px
+
+
+
+.card 
+	text-align: center 
+	border-radius: 15px
+	box-shadow: 20px -1px 113px -30px
+	margin-top: 50px
+
+.card.card4
+	box-shadow: -20px -1px 113px -30px
+
+.plan__item:hover
+	cursor: pointer
+	margin-top: 25px
+	
+
+.plan__item
+	margin: auto
+
+
+.card-img-top
+	color: #f8fafa
+	font-weight: bold
+	border-top-left-radius: 15px
+	border-top-right-radius: 15px
+	background-position-x: 45%
+	padding: 15px 0px
+
+
+
+.card-img-top p span 
+	font-size: 16px
+	color: #f8fafa
+	text-transform: uppercase
+
+.card-img-top span 
+	color: #ed462f
+	font-size: 20px
+
+.card-body
+	padding: 0px 15px
+
+.card-body ul
+	position: absolute
+	margin: 0px
+	top: 150px
+	left: -10px
+	text-align-last: left
+	list-style-image: url(../img/greenicon.png)
+
+.card-body ul li 
+	float: left
+	margin-left: 30px
+
+.card-title 
+	text-align: center
+	display: block
+	margin: auto
+	margin: 0px 0px 20px 0px
+	padding-top: 20px
+
+.card__title2
+	display: inline-block
+	content: ''
+	width: 130px 
+	border-bottom: 1px solid #000
+	padding-bottom: 250px
+
+.card-body button 
+	width: auto
+	margin-bottom: 25px
+
+.plan__cards
+	height: 580px
+
+
+#gallery h3 
+	color: #fff
+	margin-top: 100px
+
+#gallery button 
+	margin-top: 50px
+	text-align: center
+	display: block
+
+.gallery 
+	display: block
+	padding-top: 50px
+	float: left
+
+.gallery2
+	display: none
+	padding-top: 50px
+	float: left
+
+.gallery__sorter
+	display: block
+	float: left
+	padding: 0px
+	margin: 0px
+	max-width: 100%
+
+.gallery__item
+	display: block
+	float: left
+
+.gallery-text p 
+	color: #fff
+	padding: 50px 25px
+	border-radius: 100%
+	background-image: url(../img/circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 0% 30%
+	text-transform: uppercase
+	box-shadow: 1px 10px 27px -5px #000
+	opacity: 0.925
+	transition: 0.2s ease
+
+.gallery-text p:hover 
+	opacity: 1
+	
+
+.gallery__sorter a 
+	max-width: 100%
+
+.gallery__sorter a img 
+	display: block
+	float: left
+	max-width: 100%
+
+.gallery .row .gs1, .gallery .row .gs3, .gallery .row .gs3
+	margin-right: 0px
+	display: block
+	
+.gs1 
+	float: right
+
+.gs3
+	float: left
+
+#company
+	font-weight: normal
+	display: block
+	margin: 100px 0px
+	overflow-x: hidden
+
+#company h3 
+	text-align: left
+	margin: 50px 0px
+
+#company ul
+	margin: 10px 0px
+	list-style: disc
+
+.company__img
+	display: block
+	margin: auto
+	background-image: url(../img/team.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	content: ''
+	width: 946px
+	height: 589px
+	
+.company__img2
+	display: none
+
+#apn
+	position: relative
+	display: block
+	width: auto
+	height: auto
+	padding: 100px 0px
+	content: ''
+
+.forms
+	display: block
+	margin: auto
+	text-align: center
+
+.form
+	position: relative
+	z-index: 9999
+	display: block
+	margin: auto
+	text-align: center
+	padding: 50px 0px
+	border-radius: 15px
+
+.form form 
+	position: relative
+
+.form form h3
+	margin-bottom: 50px
+
+#formh3
+	display: block
+	margin: auto
+	text-align: center
+	color: #fff
+
+.form form .form__btn
+	display: block
+	margin: auto
+	text-align: center
+
+.form form 
+	z-index: 9999
+	margin: 40px 0px 
+
+.form form input
+	border-radius: 0px
+	color: #fff
+	width: 85%
+	background: none
+	border: none
+	border-bottom: 1px solid #fefffe
+	
+
+#footer
+	padding: 50px 0px 15px 0px
+	content: ''
+	border-top: 1px solid #1d0a3d
+
+.footer__social ul
+	display: block
+	float: left
+	padding: 0px
+	margin: 0px
+	margin-top: 14px
+	
+
+.footer__social ul li
+	display: block
+	float: left
+	margin-left: 15px
+
+.fot_2 
+	display: none
+
+.footer__email, .footer__email2
+	color: #fff
+	
+.footer__email p, .footer__email2 p 
+	font-weight: 300
+	color: #d2d2d4
+
+.footer__email span, .footer__email2 span 
+	font-weight: 500
+
+.footer__phone, .footer__phone2
+	color: #fff
+
+.footer__phone p, .footer__phone2 p 
+	font-weight: 300
+	color: #d2d2d4
+
+.footer__phone span, .footer__phone2 span 
+	font-weight: 500
+
+.footer__privacy
+	margin-top: 20px
+	text-align: center
+	color: #cdcbcd
+
+
+// footer circls
+
+#fc1
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell1.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 40px
+	height: 40px
+	left: 2%
+	bottom: 5%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 3s
+
+#fc2
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell4.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 45px
+	height: 45px
+	left: 5%
+	top: 10%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 5s
+
+#fc3
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell5.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 65px
+	height: 65px
+	left: 15%
+	bottom: 35%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 10s
+
+#fc4
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell8.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 30px
+	height: 30px
+	top: 20%
+	left: 20%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 5s
+
+
+#fc5
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 50px
+	height: 50px
+	bottom: 2%
+	left: 55%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 3s
+
+
+#fc6
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell4.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 60px
+	height: 60px
+	bottom: 15%
+	left: 80%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 5s
+
+#fc7
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell3.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 30px
+	height: 30px
+	top: 14%
+	right: 10%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 3s
+
+
+#fc8
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell6.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 70px
+	height: 70px
+	top: 50%
+	right: 5%
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 10s
+
+#fc9
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell7.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 170px
+	height: 170px
+	bottom: -215px
+	left: -70px
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 4s
+
+#fc10
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/f_ell10.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 170px
+	height: 170px
+	top: -190px
+	right: -85px
+	margin-left: 0px
+	opacity: 1
+	animation-duration: 4s
+
+// footer circls
+
+
+// forms //popups
+
+
+form#order
+	display: none
+	width: 100%
+	max-width: 660px
+	border-radius: 15px
+	font-family: 'Neo Sans Pro'
+	color: #fff
+
+form#order h6 
+	font-size: 28px 
+	font-weight: bold
+
+#order .inputs
+	margin: 25px 0px
+
+#order .button 
+	display: block
+	margin: auto
+
+
+
+
+.girt__form__item
+	margin-top: 25px
+
+.input__text 
+	margin-top: 15px
+	border-radius: 0px
+	color: #fff
+	width: 100%
+	background: none
+	border: none
+	border-bottom: 1px solid #fefffe
+
+.input__text:last-child
+	margin-top: 25px
+
+.inputs__radio
+	display: block
+	float: left
+	margin: auto
+	margin-top: 15px
+	
+
+.choose__plan 
+	text-transform: uppercase
+	font-size: 20px 
+	display: block
+	margin: auto
+	text-align: center
+
+.pack input
+	display: block
+	float: left
+	width: 15px
+	height: 15px
+	margin-top: 5px
+	margin-left: 15px
+	margin-right: 15px
+
+
+div#submit
+	display: none
+	width: 100%
+	max-width: 400px
+	border-radius: 15px
+	font-family: 'Neo Sans Pro'
+	color: #fff
+
+#submit h6
+	color: #f2f2f2
+	text-align: center
+	margin-top: 100px
+	font-size: 28px
+	font-weight: bold
+	text-transform: uppercase
+
+#submit p 
+	color: #f2f2f2
+	text-align: center
+	margin-top: 15px
+	margin-bottom: 100px
+	font-size: 20px
+	font-weight: normal
+
+
+.btn__fix
+	display: none
+
+// forms //popups
+
+
+
+// BLOG
+
+.blog__content
+	position: relative
+	padding: 108px 0px 100px 0px
+
+
+.blog__title
+  margin-top: 100px
+
+.blog__title h1
+	font-size: 48px 
+	text-transform: uppercase
+	font-weight: bold	
+	color: #fff
+
+	
+.blog__title p
+	max-width: 85%
+	margin-top: 50px
+	color: #fff
+	font-weight: normal
+	font-size: 16px 
+
+
+
+.input-group.md-form.form-sm.form-2 input
+	border: 1px solid #bdbdbd
+	border-top-left-radius: 0.25rem
+	border-bottom-left-radius: 0.25rem
+
+.input-group
+	display: block
+	float: right
+	text-align: right
+
+.group2
+	margin-top: 100px
+	display: block
+	width: 260px
+	height: 40px
+	position: relative
+
+.group1
+	display: none
+
+.group1 .input-group
+	width: 260px
+	height: 40px
+	position: relative
+
+.input-group-text
+	
+
+.input-group.md-form.form-sm.form-2 input
+	border-radius: 5px
+
+.fas
+	position: absolute
+	background-image: url(../img/search.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 0px 0px 
+	width: 15px 
+	height: 15px 
+	top: 10px
+	right: 10px
+	display: block
+	float: right
+	z-index: 9999
+
+
+
+
+.v-pagination__navigation
+	margin: auto
+
+.btn-group-vertical
+	float: right
+	z-index: 999
+
+.btn-group-vertical nav
+	display: block
+	float: left
+	width: 100% 
+
+	
+
+.btn-group-vertical nav ul 
+	padding: 30px 30px 40px 30px
+	background: #fff
+	border-radius: 5px
+	display: block
+	float: left
+
+.btn-group-vertical nav ul li 
+	margin-bottom: 15px
+
+.btn-group-vertical nav ul li a 
+	color: #302872
+	
+
+.paginate-pagination
+	margin: 100px 0px 50px 0px
+
+.paginate-pagination ul > li
+	margin-right: 7px
+
+.paginate-pagination ul > li > a.page
+	width: 40px
+	height: 40px
+	line-height: 40px
+	background: none
+	color: #fff
+	border-radius: 25px
+	opacity: 0.7
+
+.paginate-pagination ul > li > a.page.active
+	background: #fff
+	opacity: 1
+	color: #000
+
+.paginate-pagination ul>li>a.page.page-next, .paginate-pagination ul>li>a.page.page-prev
+	border: none
+
+
+#subscribe
+	display: block
+	float: left
+	width: 100%
+	max-width: 555px
+	height: 50px
+	margin-top: 50px
+	border: none 
+	background: #fff
+	border-radius: 7px
+	border-bottom-right-radius: 25px
+	border-top-right-radius: 25px
+	-webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75)
+	-moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75)
+	box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75)
+	padding-left: 15px
+
+#subscribe input 
+	width: 100%
+	max-width: 320px
+	height: 50px
+	border: none
+	background: none
+	padding-left: 5px
+
+	
+#subscribe button
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+
+.btn
+	display: block
+	float: right
+	height: 50px
+	border: none
+	padding: 0px 
+	margin: 0px
+
+.btn button 
+	height: 50px
+
+#articles
+	padding-top: 25px	
+
+.articles__item
+	background: #fff
+	margin-top: 25px
+	border-radius: 0px
+	-webkit-box-shadow: 0px 10px 19px -5px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 10px 19px -5px rgba(0,0,0,0.75)
+	box-shadow: 0px 10px 19px -5px rgba(0,0,0,0.75)
+
+.row .aicol 
+	padding: 0px
+
+.art__img img 
+	width: 100% 
+	max-width: 459.98px
+
+.articles__title
+	font-size: 16px
+	font-weight: bold
+	padding: 25px 30px
+	background: #8147d7
+	color: #fff
+	text-transform: uppercase
+
+.articles__prev
+	padding: 25px 30px
+
+.articles__time a 
+	float: right
+	cursor: pointer
+
+.articles__item a:hover, .articles__item a:focus, .articles__item a:active
+	text-decoration: none
+
+.articles__prev a:last-child
+	text-decoration: underline
+
+.articles__time
+	padding: 0px 30px
+
+.articles__time img 
+	margin-right: 5px
+
+.articles__prev a 
+	float: right
+
+
+.acticle
+	visibility: hidden
+	margin-top: 0px
+
+.article__st
+	padding: 50px 0px 50px 0px
+	margin-top: -50px
+	background: rgba(0,0,0,0.3)
+	border-radius: 7px
+
+
+
+.article__st h1 
+	font-size: 48px 
+	padding: 0px 15px
+	text-align: center
+	color: #fff
+	text-transform: uppercase
+	font-weight: bold
+
+#article__st__text
+	padding: 50px 15px
+
+#undo
+	width: 100%
+	max-width: 100px
+	margin-top: 0px
+	opacity: 0.7
+	cursor: pointer
+
+.article__st p 
+	font-size: 18px 
+	color: #fff
+	text-align: center
+
+.article__st img 
+	width: 100%
+	max-width: 555px
+	display: block
+	margin: auto
+	margin-top: 50px
+
+
+#ell1_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell1.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 140px
+	height: 100px
+	top: 108px
+	right: 1%
+	margin-left: -145px
+	z-index: 1
+	opacity: 0.7
+
+#ell2_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 200px
+	height: 200px
+	bottom: -50px
+	left: 5%
+	margin-left: -90px
+	z-index: 2
+	opacity: 0.5
+	animation-duration: 4s
+
+#ell4_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell4.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 150px
+	height: 150px
+	bottom: 10%
+	right: 5%
+	margin-left: -110px
+	z-index: 4
+	opacity: 0.7	
+	animation-duration: 4s
+
+#ell5_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell5.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 150px
+	height: 150px
+	top: 5%
+	right: 10%
+	margin-left: -75px
+	z-index: 5
+	opacity: 0.7
+	animation-duration: 4s
+
+#ell6_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell6.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 150px
+	height: 150px
+	top: 15%
+	right: 25%
+	margin-left: -75px
+	z-index: 5
+	opacity: 0.7
+	animation-duration: 4s
+
+#ell9_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell9.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 455px
+	height: 452px
+	top: 20%
+	left: 0%
+	margin-left: -225px
+	z-index: 9
+	opacity: 0.5
+
+#ell10_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell10.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 300px
+	height: 298px
+	top: 50%
+	right: 3%
+	margin-left: -225px
+	z-index: 10
+	opacity: 0.5	
+
+#ell8_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell8.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 180px
+	height: 180px
+	bottom: 80px
+	left: 50%
+	margin-left: -90px
+	z-index: 8
+	opacity: 0.5
+
+#ell7_f
+	position: absolute
+	display: block
+	content: ''
+	background-image: url(../img/ell7.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 120px
+	height: 120px
+	top: 128px
+	left: 10%
+	margin-left: -120px
+	z-index: 7
+	opacity: 0.7
+
+
+
+
+// BLOG
+
+
+// Custom css
+
+
+
+@import "media" // Always at the end

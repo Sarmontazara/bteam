@@ -1,0 +1,516 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block headtitle %}{% cycle 'Разработка и продвижение сайтов и лендингов' 'Лендинг от 9800 руб.' %}{% endblock %}
+{% block desk %}Создание, разработка и продвижение сайтов и лендингов. Компания профессионалов поможет получить инструменты для повышения прибыли вашего бизнеса{% endblock %}
+{% block content %}
+<!-- Screen 1 -->
+<div class="screen1 back__scr__one">
+		<!-- Gift2 or tablet -->
+		<div id="gift2" class="container action__back2 clearfix">
+				<div  class="row ">
+				<div class="col-12 col-sm-8">
+					<p class="gift__item1">Только для самых быстрых</p>
+					<p class="gift__item2">Разработаем лендинг <br><span>без предоплаты</span></p>
+					<p class="gift__item3">Успей оформить заявку и <span>плати только за результат! </span></p>
+				</div>
+				<div class="col-12 col-sm-4">
+					<p class="gift__item4">До конца <i>Акции</i> осталось</p>
+					<div class="gift__time"><span>Минут</span><span>Секунд</span><div id="cd2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Gift2 -->
+		<!-- Menu -->
+		<div class="menu action__back">
+			<div class="container">
+				<div class="col-3 col-sm-4 col-lg-2">
+					<div class="logo">
+						<a class="logo1" href="#" title="Разработка и продвижение сайтов и лендингов под ключ"><img	src="{% static 'img/logo.png' %}" 	title="Разработка и продвижение сайтов и лендингов под ключ" alt="Разработка и продвижение сайтов и лендингов под ключ"></a>
+						<a class="logo2" href="#" title="Разработка и продвижение сайтов и лендингов под ключ"><img	src="{% static 'img/logomin.png' %}" title="Разработка и продвижение сайтов и лендингов под ключ" alt="Разработка и продвижение сайтов и лендингов под ключ"></a>
+					</div>
+				</div>
+				<div class="menu__item">
+				<ul>
+					<li><a href="#plan">Услуги</a></li>
+					<li><a href="#ggg">Портфолио</a></li>
+					<li><a href="#comp">О компании</a></li>
+					<li><a href="/blog.html">Блог</a></li>
+				</ul>
+				</div>
+				<div class="contacts" itemscope itemtype="http://schema.org/Organization">
+					<meta itemprop="name" content="BazulurTeam" />
+					<p><a href="tel:+79290596615" itemprop="telephone"> +7 (929) 05 96 615 </a></p>
+					<span itemprop="email">info@bazulurteam.ru</span>
+				</div>
+				<div class="menu__hamb">
+				<button class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+				</button>
+				<nav id="navigation">
+					<ul class="navs hiddens">
+							<li><a href="#plan">Услуги</a></li>
+							<li><a href="#ggg">Портфолио</a></li>
+							<li><a href="#comp">О компании</a></li>
+							<li><a href="/blog.html">Блог</a></li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+		<!-- Menu -->
+    <div class="content">
+		<!-- Gift for mobile-->
+		<div id="gift3" class="container action__back2 clearfix">
+			<div  class="row ">
+				<div class="col-12 col-sm-8">
+					<p class="gift__item2">	Лендинг <br> <span>без предоплаты</span></p>
+				</div>
+				<div class="col-12 col-sm-4">
+					<p class="gift__item4">	До конца <i>Акции</i> осталось</p>
+					<div class="gift__time"><span>Минут</span><span>Секунд</span><div id="cd3"></div></div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<button class="button">Оформить заявку</button>
+				</div>
+			</div>
+		</div>
+		<!-- Gift3 -->
+
+		<!-- Title -->
+	<div id="title">
+		<div class="container clearfix">
+			<div class="row">
+				<div id="colum" class="col-12 col-lg-6">
+					<div class="title">
+						<div class="title__slide">
+						<!-- Slide -->
+						<div><h1 class="h1">Разработка лендинга <br>в фирменном стиле	</h1></div>
+						<div><p class="h1">Одностраничник <br> под ключ	</p></div>
+						<div><p class="h1">Корректировка <br>существующего сайта	</p></div>
+						<!-- Slide -->
+						</div>
+						<span>Проектирование, дизайн, верстка, размещение в Интернете</span>
+						<button id="button" data-fancybox="" data-src="#order" href="javascript:;" class=" button">
+								Обсудить вашу тему
+						</button>
+						<button data-fancybox="" data-src="#order" href="javascript:;" class="button btn__fix hiddens">
+								Обсудить вашу тему
+						</button>
+					</div>
+				</div>
+				<!-- Gift -->
+				<div id="gift" class="col-12 col-lg-6 visible">
+					<div class="title__gift action__back shadow">
+						<p class="gift__item1">	Только для самых быстрых</p>
+						<p class="gift__item2">	Разработка лендинга <br><span>без предоплаты</span>	</p>
+						<p class="gift__item3">	Успей оформить заявку и <span>плати только за результат! </span></p>
+						<p class="gift__item4">	До конца <i>Акции</i> осталось</p>
+						<div class="gift__time"><span>Минут</span>	<span>Секунд</span>	<div id="cd"></div>	</div>
+					</div>
+				</div>
+				<!-- Gift -->
+			</div>
+		</div>
+	</div>
+	<!-- Title -->
+	<div>
+	<span id="layer1">	</span>
+	<span id="layer2" class="animated infinite pulse">	</span>
+	<div id="ell1" class="ell">	</div>
+	<div id="ell2" class="ell">	</div>
+	<div id="ell4" class="ell animated infinite pulse">	</div>
+	<div id="ell5" class="ell animated infinite pulse">	</div>
+	<div id="ell6" class="ell animated infinite pulse">	</div>
+	<div id="ell7" class="ell">	</div>
+	<div id="ell8" class="ell">	</div>
+	<div id="ell9" class="ell">	</div>
+	<div id="ell10" class="ell"></div>
+	<div id="fig1" class="ell animated infinite pulse">	</div>
+	<div id="fig2" class="ell animated infinite pulse">	</div>
+	</div>
+
+	</div>
+
+</div>
+	<!-- Screen 1 -->
+
+	<!-- Screen 2 -->
+	<div class="whychoose">
+		<div class="container clearfix">
+			<div class="choose">
+				<h3 class="col-12">Почему нас выбирают</h3>
+				<div class="row hide-on-mobile">
+					<div class="choose__item col-12 col-lg-4 col-sm-6">
+						<img src="{% static 'img/advicon1.png' %} " alt="Без предоплаты">
+						<h4>Работаем без предоплаты	</h4>
+						<p>Вы платите только за результат. Мы уважаем свои клиентов, и вы будете платить только по факту выполненных работ и никак иначе!</p>
+					</div>
+					<div class="choose__item col-12 col-lg-4 col-sm-6">
+						<img src="{% static 'img/advicon2.png' %}" alt="Уникальный дизайн">
+						<h4>Уникальный дизайн</h4>
+						<p>Наши дизайнеры отвергают все шаблоны - и делают свою работу так, как им велят сердце и гайдлайны</p>
+					</div>
+					<div class="choose__item col-12 col-lg-4 col-sm-6">
+						<img src="{% static 'img/advicon3.png' %}" alt="Гарантия 7 месяцев!">
+						<h4>Гарантия на услуги 7 месяцев</h4>
+						<p>Все лендинги, сделанные в нашей студии, проходят тщательный контроль, поэтому мы даем гарантию 7 месяцев	</p>
+					</div>
+				</div>
+
+				<div class="m-slider d-md-none d-xl-none">
+					<div class="text-center">
+						<img src="{% static 'img/advicon1.png' %}" alt="Без предоплаты" style="display: inline-block;">
+						<h4>Работаем без предоплаты	</h4>
+						<p>Вы платите только за результат. Мы уважаем свои клиентов, и вы будете платить только по факту выполненных работ и никак иначе!</p>
+					</div>
+					<div class="text-center">
+						<img src="{% static 'img/advicon2.png' %}" alt="Уникальный дизайн" style="display: inline-block;">
+						<h4>Уникальный дизайн</h4>
+						<p>Наши дизайнеры отвергают все шаблоны - и делают свою работу так, как им велят сердце и гайдлайны</p>
+					</div>
+					<div class="text-center">
+						<img src="{% static 'img/advicon3.png' %}" alt="Гарантия 7 месяцев!" style="display: inline-block;">
+						<h4>Гарантия на услуги 7 месяцев</h4>
+						<p>Все лендинги, сделанные в нашей студии, проходят тщательный контроль, поэтому мы даем гарантию 7 месяцев	</p>
+					</div>
+				</div>
+			</div>
+			<i id="plan"></i>
+		</div>
+	</div>
+	<!-- Screen 2 -->
+
+	<!-- Screen 3 -->
+	<div class="plan">
+		<div class="container-fluid clearfix">
+			<div class="row">
+				<h3 class="col-12">	Что мы делаем</h3>
+				<p class="plan__text col-12 col-md-8 center">
+					Мы можем предложить вам как разработку сайта с нуля под ключ, так и выполнение <br>
+					корректировки и интеграции отдельных элементов уже существующего веб-сайта <br>
+					или веб-приложения.
+				</p>
+				<div class="container clearfix">
+				<div class="plan__cards center">
+				<div class="row">
+				<!-- Card 1 -->
+				<div class="plan__item col-10 col-sm-5 col-md-5 col-lg-3">
+					<div class="card">
+						<div class="card-img-top card1back" alt="Card image cap">
+							<p>Пакет <span>Начальный</span></p>
+							<span>9 800 ₽</span>
+						</div>
+						<div class="card-body">
+			              <ul>
+								<li>бесплатный прототип</li>
+								<li>дизайн на выбор</li>
+								<li>продающая структура	</li>
+								<li class="opacity">адаптивная верстка</li>
+								<li class="opacity">кроссбраузерность</li>
+								<li class="opacity">размещение в Интернете</li>
+								<li class="opacity">рекламная кампания</li>
+								<li class="opacity">проведение split-тестов</li>
+							</ul>
+							<div class="card__title2"> </div>
+							<h5 class="card-title">	Срок реализации <br>до 7 дней</h5>
+							<div class="fix"></div>
+							<button id="button" data-fancybox="" data-src="#order" href="javascript:;" class=" button">
+								Оформить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Card 1 -->
+
+				<!-- Card 2 -->
+				<div class="plan__item col-10 col-sm-5 col-md-5 col-lg-3">
+					<div class="card card2">
+						<div class="card-img-top card2back" alt="Card image cap">
+							<p>Пакет <span>Стандарт</span></p>
+							<span>15 700 ₽</span>
+						</div>
+						<div class="card-body">
+			              <ul>
+								<li>бесплатный прототип</li>
+								<li>уникальный дизайн</li>
+								<li>продающая структура	</li>
+								<li>адаптивная верстка</li>
+								<li>кроссбраузерность</li>
+								<li class="opacity">размещение в Интернете</li>
+								<li class="opacity">рекламная кампания</li>
+								<li class="opacity">проведение split-тестов</li>
+							</ul>
+							<div class="card__title2"> </div>
+							<h5 class="card-title">	Срок реализации <br>до 10 дней</h5>
+							<div class="fix"></div>
+							<button id="button" data-fancybox="" data-src="#order" href="javascript:;" class=" button">
+								Оформить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Card 2 -->
+
+				<!-- Card 3 -->
+				<div class="plan__item col-10 col-sm-5 col-md-5 col-lg-3">
+
+					<div class="card card3">
+						<div class="card-img-top card3back" alt="Card image cap">
+							<p>	Пакет <span>Расширенный</span></p>
+							<span>от 25 000 ₽</span>
+						</div>
+
+						<div class="card-body">
+			              <ul>
+								<li>бесплатный прототип</li>
+								<li>уникальный дизайн</li>
+								<li>продающая структура	</li>
+								<li>адаптивная верстка</li>
+								<li>кроссбраузерность</li>
+								<li>размещение в Интернете</li>
+								<li>рекламная кампания</li>
+								<li>проведение split-тестов</li>
+							</ul>
+							<div class="card__title2"> </div>
+							<h5 class="card-title">	Срок реализации <br>до 21 дней</h5>
+							<div class="fix"></div>
+							<button id="button" data-fancybox="" data-src="#order" href="javascript:;" class=" button">
+								Оформить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Card 3 -->
+
+				<!-- Card 4 -->
+				<div class="plan__item col-10 col-sm-5 col-md-5 col-lg-3">
+					<div class="card card4">
+						<div class="card-img-top card4back" alt="Card image cap">
+							<p>	Пакет <span>Поддержка</span></p>
+							<span>от 5 000 ₽</span>
+						</div>
+						<div class="card-body">
+			              <ul>
+								<li>создание прототипа</li>
+								<li>отрисовка дизайна</li>
+								<li>проработка структуры</li>
+								<li>проверка кроссбраузерности</li>
+								<li>размещение в Интернете</li>
+								<li>рекламная кампания</li>
+								<li>проведение split-тестов</li>
+							</ul>
+							<div class="card__title2"> </div>
+							<h5 class="card-title">	Срок реализации <br>от 3 дней</h5>
+							<div class="fix"></div>
+							<button id="button" data-fancybox="" data-src="#order" href="javascript:;" class=" button">
+								Оформить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Card 4 -->
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Screen 3 -->
+
+  <div id="ggg"></div>
+	<!-- Screen 4 -->
+	<div id="gallery">
+		<div class="container-fluid clearfix">
+			<div class="row">
+				<h3 class="col-12">	Наши лучшие работы</h3>
+				<div class="gallery container clearfix">
+					<div class="row">
+					<div class="gallery__sorter gs1 col-12 col-sm-4">
+						<a data-fancybox="gallery" href="{% static 'img/site1.jpg' %}">
+						<div class="gallery__item">
+							<img class="gallery__img" src="{% static 'img/site1.jpg' %}" alt="Портфолио">
+							<div class="gallery-layer_top gallery-layer_scale">
+								<div class="gallery-text">
+									<p>	Посмотреть <br>	работу</p>
+								</div>
+							</div>
+						</div>
+						</a>
+						<a data-fancybox="gallery" href="{% static 'img/site4.jpg' %}">
+						<div class="gallery__item">
+							<img class="gallery__img" src="{% static 'img/site4.jpg' %}" alt="Портфолио">
+							<div class="gallery-layer_top gallery-layer_scale">
+								<div class="gallery-text">
+									<p>	Посмотреть <br>	работу</p>
+								</div>
+							</div>
+						</div>
+						</a>
+					</div>
+					<div class="gallery__sorter gs2 col-12 col-sm-4">
+						<a data-fancybox="gallery" href="{% static 'img/site2.jpg' %}">
+						<div class="gallery__item">
+							<img class="gallery__img" src="{% static 'img/site2.jpg' %}" alt="Портфолио">
+							<div class="gallery-layer_top gallery-layer_scale">
+								<div class="gallery-text">
+									<p>	Посмотреть <br>	работу</p>
+								</div>
+							</div>
+						</div>
+						</a>
+						<a data-fancybox="gallery" href="{% static 'img/site5.jpg' %}">
+						<div class="gallery__item">
+							<img class="gallery__img" src="{% static 'img/site5.jpg' %}" alt="Портфолио">
+							<div class="gallery-layer_top gallery-layer_scale">
+								<div class="gallery-text">
+									<p>	Посмотреть <br>	работу</p>
+								</div>
+							</div>
+						</div>
+						</a>
+					</div>
+					<div class="gallery__sorter gs3 col-12 col-sm-4">
+						<a data-fancybox="gallery" href="{% static 'img/site3.jpg' %}">
+						<div class="gallery__item">
+							<img class="gallery__img" src="{% static 'img/site3.jpg' %}" alt="Портфолио">
+							<div class="gallery-layer_top gallery-layer_scale">
+								<div class="gallery-text">
+									<p>	Посмотреть <br>	работу</p>
+								</div>
+							</div>
+						</div>
+						</a>
+						<a data-fancybox="gallery" href="{% static 'img/site6.jpg' %}">
+						<div class="gallery__item">
+							<img class="gallery__img" src="{% static 'img/site6.jpg' %}" alt="Портфолио">
+							<div class="gallery-layer_top gallery-layer_scale">
+								<div class="gallery-text">
+									<p>	Посмотреть <br>	работу</p>
+								</div>
+							</div>
+						</div>
+						</a>
+					</div>
+					</div>
+				</div>
+				<div class="gallery2 container-fluid clearfix">
+						<div class="row">
+							<a data-fancybox="gallery2" href="{% static 'img/site1.jpg' %}"><img class="gallery__img" src="{% static 'img/site1.jpg' %}" alt="Портфолио"></a>
+							<a data-fancybox="gallery2" href="{% static 'img/site4.jpg' %}"><img class="gallery__img" src="{% static 'img/site4.jpg' %}" alt="Портфолио"></a>
+							<a data-fancybox="gallery2" href="{% static 'img/site2.jpg' %}"><img class="gallery__img" src="{% static 'img/site2.jpg' %}" alt="Портфолио"></a>
+							<a data-fancybox="gallery2" href="{% static 'img/site5.jpg' %}"><img class="gallery__img" src="{% static 'img/site5.jpg' %}" alt="Портфолио"></a>
+							<a data-fancybox="gallery2" href="{% static 'img/site3.jpg' %}"><img class="gallery__img" src="{% static 'img/site3.jpg' %}" alt="Портфолио"></a>
+							<a data-fancybox="gallery2" href="{% static 'img/site6.jpg' %}"><img class="gallery__img" src="{% static 'img/site6.jpg' %}" alt="Портфолио"></a>
+						</div>
+					</div>
+				<div class="col-12">
+				<button id="button" data-fancybox="" data-src="#order" href="javascript:;" class=" button center">
+								Оформить заявку
+				</button>
+				</div>
+			</div>
+			<i id="comp"></i>
+		</div>
+	</div>
+	<!-- Screen 4 -->
+	<!-- Screen 5 -->
+	<div id="company">
+		<div class="container clearfix">
+			<div class="row">
+				<div class="company__title col-12 col-md-12 col-lg-6">
+					<h3>О компании</h3>
+					<p>Наша компания BazulurTeam основана в 2018 году. Свою миссию мы видим в том, чтобы помочь начинающим бизнесменам получить
+					отличные инструменты, не сравнимые по качеству с конструкторами, а по цене - с именитыми студиями. </p>
+					<p>Что мы делаем:</p>
+					<ul>
+						<li>Лендинги</li>
+						<li>Сайты-визитки</li>
+						<li>Интернет-магазины</li>
+						<li>Новостные порталы</li>
+					</ul>
+					<p>	В каких тематиках мы НЕ работаем:</p>
+					<ul>
+						<li>Финансовые пирамиды</li>
+						<li>Запрещенные товары и услуги</li>
+						<li>БАДы</li>
+						<li>Алкоголь, табак</li>
+					</ul>
+				</div>
+				<div class="company__photo col-12 col-lg-6">
+					<div class="company__img"></div>
+					<div class="company__img2"><img src="{% static 'img/team.jpg' %}"  alt="Принципы">	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Screen 5 -->
+
+
+<div id="faq">
+	<div class="container clearfix">
+		<div class="row">
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Я не знаю, какой сайт мне нужен. Что делать?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							<h4>Мы поможем</h4><br>Оставьте заявку на нашем сайте, напишите или позвоните нам и получите развернутую консультацию по этому вопросу, получите рекомендации по типу сайта, его функционалу, целям и задачам. Звоните!
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Как вы работаете?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							<h4>Официальная гарантия 7 месяцев</h4><br>Мы работаем дистанционно, все переговоры ведём при помощи мессенджеров и электронной почты. Принимаем электронные деньги и бнковский перевод
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Мы приняли решение заказать сайт у вас. Что дальше?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body">
+							<h4>Последовательность работ</h4><br>После того, как Вы делаете заказ, мы заключаем соглашение. Работа осуществляется поэтапно, таким же образом происходит и оплата. Мы разрабатываем прототип, заказчик его утверждает. Затем начинается работа по разработке дизайна, верстке и контенту, разработка функционала сайта. Мы доводим сайт до полной готовности и сдаем его точно в срок. После завершения работы мы учим Вас работать в CMS системе вашего сайта
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								У меня нет контента для сайта. Что делать?
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+						<div class="card-body">
+							<h4>Позвольте нам взять это на себя!</h4><br>Наши специалисты в области маркетинга сформируют для Вас лучший продающий контент, учитывая специфику Вашей работы и сферу деятельности. Требуется лишь небольшая помощь с Вашей стороны
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

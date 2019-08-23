@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Страница не найдена || BazulurTeam</title>
+  <meta name="description" content="{% block desk %}  {% endblock %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="{% static 'img/favicon/favicon.ico' %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon-180x180.png' %}">
+  <!-- Template Basic Images End -->
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hamburgers.css' %}">
+  <link rel="stylesheet" href="{% static 'css/back.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
+  <!-- CSS -->
+</head>
+
+<body>
+
+
+<div id="apn" class="backinform">
+
+  <div class="container clearfix">
+    <div class="row">
+      <div class="forms col-12 col-md-8 mx-auto">
+        <div class="form backform shadow">
+          <h3 id="formh3">Упс... Страница не найдена</h3>
+          <p>перейдите на главную страницу</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fc1" class="animated infinite pulse"></div>
+  <div id="fc2" class="animated infinite flash"></div>
+  <div id="fc3" class="animated infinite flash"></div>
+  <div id="fc4" class="animated infinite pulse"></div>
+  <div id="fc5" class="animated infinite flash"></div>
+  <div id="fc6" class="animated infinite pulse"></div>
+  <div id="fc7" class="animated infinite flash"></div>
+  <div id="fc8" class="animated infinite flash"></div>
+</div>
+<!-- Screen 6 -->
+<!-- Footer -->
+<footer id="footer" class="backfooter">
+  <div class="container clearfix">
+    <div class="row">
+      <div class="col-8 col-sm-6 col-md-3 col-lg-2">
+        <div class="footer__logo"><img src="{% static 'img/logo-footer.png' %}" alt="logo"> </div>
+        <div class="fot_2">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer__email2"><p>Email</p><span>info@bazulurteam.ru</span></div>
+            </div>
+            <div class="col-12">
+              <div class="footer__phone2">
+                <p>Телефон</p>
+                <p><a href="tel:+79290596615"> +7 (929) 05 96 615 </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1 col-sm-6 col-md-4 col-lg-4">
+        <div class="footer__social">
+          <ul>
+            <li><a href="https://vk.com/bazulurteam" target="_blank"><img src="{% static 'img/vk.png' %}" alt="vk-group"></a></li>
+            <li><a href="https://www.facebook.com/bazulurteam" target="_blank"><img src="{% static 'img/fb.png' %}" alt="fb-group"></a></li>
+            <li><a href="https://wa.me/79290596615?text=Я%20хочу%20получить%20консультацию"><img src="{% static 'img/wats.png' %}" alt="whatsapp"></a></li>
+            <!--li><img src="{% static 'img/inst.png' %}"></li-->
+            <li><a href="https://www.behance.net/bazulurteam" target="_blank"><img src="{% static 'img/be.png' %}" alt="be-group"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 col-sm-6 col-md-2 col-md-offset-0 col-lg-3 col-lg-offset-0">
+        <div class="footer__email">
+          <p>Email</p><span>info@bazulurteam.ru</span></div>
+      </div>
+
+      <div class="col-4 col-sm-6 col-md-2 col-lg-3">
+        <div class="footer__phone">
+          <p>Телефон </p>
+          <p><a href="tel:+79290596615"> +7 (929) 05 96 615 </a></p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="footer__privacy"><p> © «BazulurTeam», 2018-{% now 'Y' %}. Все права защищены </p>
+            <a href="/policy.html">Политика конфеденциальности</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+<form id="order" class="fancybox-content shadow backform" action="" method="post">
+  {% csrf_token %}
+  <h6>Оставьте заявку и мы свяжемся с вами</h6>
+  <div id="gift__form__without" class="inputs">
+    <input class="input__text" type="text" name="name" id="" placeholder="Ваше имя" required><br><br>
+    <input class="input__text" type="email" name="email" id="" placeholder="Ваш email" required><br><br>
+    <input class="input__text" type="text" name="text" id="" placeholder="Текст сообщения" required>
+    <div id="gift__form" class="inputs">
+      <p><input type="checkbox" checked name="sale" id="sale" class="input__sale"> Ваша заявка акционная</p>
+    </div>
+  </div>
+  <br>
+  <button type="submit" class=" button">
+    Отправить заявку
+  </button>
+  <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+      <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+    </svg>
+  </button>
+</form>
+
+<div id="submit" class="fancybox-content shadow backsubmit">
+  <h6>Ваша заявка принята</h6>
+  <p>Проверьте почту</p>
+  <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+      <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+    </svg>
+  </button>
+</div>
+
+<!-- Custom HTML -->
+<!-- Scripts -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery.plugin.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/js.cookie.min.js' %}"></script>
+<script src="{% static 'js/timer3.js' %}"></script>
+<script src="{% static 'js/timer2.js' %}"></script>
+<script src="{% static 'js/timer.js' %}"></script>
+<script src="{% static 'js/hamburger.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<!-- Scripts -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137020298-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137020298-1');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52877221, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/52877221" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Pixel VK -->
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?162",t.onload=function(){VK.Retargeting.Init("VK-RTRG-389846-ibzL2"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-389846-ibzL2" style="position:fixed; left:-999px;" alt=""/></noscript>
+<!-- END PIXEL VK-->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '645654709260083');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=645654709260083&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>
