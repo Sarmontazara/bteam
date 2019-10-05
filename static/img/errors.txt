@@ -1,6 +1,0 @@
-[1/22/2019, 11:42:26 PM] layer "+7 (915) 12 34 567": Expected Either a default asset specification or a layer asset specification but "+" found.
-[1/22/2019, 11:42:26 PM] layer "mail_box@gmail.com": Unsupported extension: com
-[1/22/2019, 11:42:26 PM] layer "mail_box@gmail.com": Unsupported extension: com
-[1/22/2019, 11:42:26 PM] layer "+7 (915) 12 34 567": Expected Either a default asset specification or a layer asset specification but "+" found.
-[1/22/2019, 11:42:26 PM] layer "Email mail_box@gmail.com": Unsupported extension: com
-[1/22/2019, 11:42:26 PM] layer "tel.png": Duplicate path: tel.png

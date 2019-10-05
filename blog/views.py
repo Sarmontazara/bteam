@@ -43,12 +43,15 @@ def blog(request):
     articles = paginator.get_page(page)
     return render(request, 'blog/blog.html', {'last_pages': last_pages, 'articles': articles})
 def post_detail(request, pk):
+    last_pages = Post.objects.order_by("-pk")[0:5]  # Вывод последних 5 статей справа
     post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+    return render(request, 'blog/post_detail.html', {'last_pages': last_pages, 'post': post})
 def thanks(request):
     return render(request, 'blog/thanks.html')
 def yandexver(request):
     return render(request, 'blog/yandex_2ce42828c2811ce8.html')
+def seosan(request):
+    return render(request, 'blog/seosan-verification-f45fecc59a2f45da.html')
 def links(request):
     return render(request, 'blog/links1059627.html')
 def policy(request):

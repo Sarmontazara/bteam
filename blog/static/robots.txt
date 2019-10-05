@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /thanks.html
+Disallow: /links1059627.html
+
+Sitemap: https://bazulurteam.ru/sitemap.xml
+Host: bazulurteam.ru

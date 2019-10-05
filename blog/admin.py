@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Post,Order,Status
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display=['page','name','email','date_created','price','zstatus','sale']
+    list_display=['name','email','date_created','price','zstatus','sale']
     ordering=['-date_created']
 
 admin.site.register(Status)
